@@ -2,12 +2,12 @@ import os
 import telebot
 import google.generativeai as genai
 
-TELEGRAM_TOKEN = os.getenv("8590221607:AAGo4jKRjAZR6UtiKEfuZKsBY2BN29CthcY")
-GEMINI_API_KEY = os.getenv("AIzaSyD4gHcU51Txs1rIL3a3oMb6TDQkedm-5hc")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-bot = telebot.TeleBot(TELEGRAM_TOKEN)
+bot = telebot.TeleBot(8590221607:AAGo4jKRjAZR6UtiKEfuZKsBY2BN29CthcY)
 
-genai.configure(api_key=GEMINI_API_KEY)
+genai.configure(api_key=AIzaSyD4gHcU51Txs1rIL3a3oMb6TDQkedm-5hc)
 
 @bot.message_handler(func=lambda msg: True)
 def reply(message):
